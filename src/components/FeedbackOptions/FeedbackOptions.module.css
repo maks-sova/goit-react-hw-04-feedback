@@ -1,0 +1,23 @@
+.titleFeedbackOptions{
+    display: flex;
+    justify-content:center
+}
+.listFeedbackOptions{
+    display: flex;
+    list-style: none;
+    gap: 10px;  
+}
+.liStyle{
+    display: flex;
+    margin-bottom: 10px;
+}
+.button{
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  
+}
+.button:hover{
+    background: red;
+    color:azure;
+}
