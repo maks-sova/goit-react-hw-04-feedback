@@ -2,14 +2,14 @@ import React from 'react';
 import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
-export default function Statistics({
+const Statistics = ({
   good,
   neutral,
   bad,
   title,
   total,
   positivePercentage,
-}) {
+}) => {
   return (
     <div className={css.Statistics}>
       <h2 className={css.titleStyle}>{title}</h2>
@@ -20,7 +20,7 @@ export default function Statistics({
       <p className={css.pStyle}>Positive feedback:{positivePercentage}</p>
     </div>
   );
-}
+};
 Statistics.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
@@ -28,3 +28,4 @@ Statistics.propTypes = {
   total: PropTypes.number.isRequired,
   positivePercentage: PropTypes.number.isRequired,
 };
+export default Statistics;
