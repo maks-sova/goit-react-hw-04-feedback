@@ -1,6 +1,7 @@
 .titleFeedbackOptions{
     display: flex;
-    justify-content:center
+    padding-left: 10px;
+    /* justify-content:center */
 }
 .listFeedbackOptions{
     display: flex;
